@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Htag } from "./components";
 
 // export const metadata: Metadata = {
 //   title: 'First page',
@@ -16,5 +17,5 @@ import styles from "./page.module.css";
 // }
 
 export default function Home() {
-  return <div>Hello World</div>;
+  return <Htag tag="h1">Текст</Htag>;
 }
