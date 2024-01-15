@@ -10,7 +10,8 @@
     "stylelint": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "dependencies": {
-    "next": "14.0.3",
+    "classnames": "^2.5.1",
+    "next": "^14.0.5-canary.58",
     "react": "^18",
     "react-dom": "^18"
   },
