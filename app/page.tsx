@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Htag } from "./components";
+import { Button, Htag } from "./components";
 
 // export const metadata: Metadata = {
 //   title: 'First page',
@@ -17,5 +17,11 @@ import { Htag } from "./components";
 // }
 
 export default function Home() {
-  return <Htag tag="h1">Текст</Htag>;
+  return (
+    <>
+      <Htag tag="h1">Текст</Htag>
+      <Button appearance="primary">Click</Button>
+      <Button appearance="ghost">Click</Button>
+    </>
+  );
 }
