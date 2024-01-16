@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Button, Htag } from "./components";
+import Logo from "../public/vercel.svg";
 
 // export const metadata: Metadata = {
 //   title: 'First page',
@@ -19,9 +20,14 @@ import { Button, Htag } from "./components";
 export default function Home() {
   return (
     <>
+      <Logo />
       <Htag tag="h1">Текст</Htag>
-      <Button appearance="primary">Click</Button>
-      <Button appearance="ghost">Click</Button>
+      <Button appearance="primary" arrow="right">
+        Click
+      </Button>
+      <Button appearance="ghost" arrow="right">
+        Click
+      </Button>
     </>
   );
 }

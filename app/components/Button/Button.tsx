@@ -2,11 +2,13 @@ import React from "react";
 import cn from "classnames";
 import { ButtonProps } from "./Button.props";
 import styles from "./Button.module.css";
+import ArrowIcon from "./arrow.svg";
 
 export const Button = ({
   appearance,
   children,
   className,
+  arrow = "none",
   ...props
 }: ButtonProps): JSX.Element => {
   return (
@@ -18,6 +20,16 @@ export const Button = ({
       {...props}
     >
       {children}
+      {arrow !== "none" && (
+        <span
+          className={cn(styles.arrow, {
+            [styles.down]: arrow === "down",
+            [styles.right]: arrow === "right",
+          })}
+        >
+          <ArrowIcon />
+        </span>
+      )}
     </button>
   );
 };
