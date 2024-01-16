@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button, Htag } from "./components";
+import { Button, Htag, Paragraph } from "./components";
 import Logo from "../public/vercel.svg";
 
 // export const metadata: Metadata = {
@@ -28,6 +28,25 @@ export default function Home() {
       <Button appearance="ghost" arrow="right">
         Click
       </Button>
+      <Paragraph>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+        repudiandae, aperiam exercitationem nostrum velit asperiores veniam ea
+        hic placeat quaerat! Necessitatibus quasi voluptas, enim quod sequi fuga
+        doloribus magni dolores. Ex maxime minima provident perferendis rerum.
+        Quod illum officiis maxime quia dolore commodi deleniti, est ducimus,
+        modi obcaecati, similique magni optio officia. Asperiores consectetur
+        omnis quos consequatur beatae ullam praesentium. Dignissimos unde nemo
+        repellendus vitae placeat culpa! Porro, dolorem aperiam! Ullam
+        temporibus et incidunt veniam corporis necessitatibus iusto quaerat
+        soluta, tempore a impedit quos ducimus corrupti perferendis alias neque!
+        Recusandae. Accusamus officiis totam sint assumenda deleniti dolor odio
+        quos inventore laudantium enim numquam voluptatum necessitatibus
+        dignissimos tenetur, ipsum quis incidunt vel. Commodi iste amet vero
+        quibusdam corrupti quos corporis at? Fugiat ut impedit voluptatum
+        pariatur quae architecto commodi explicabo necessitatibus laudantium,
+        similique hic adipisci ipsum, ratione vel minus nulla provident id quo
+        molestias vero? Suscipit sit inventore doloribus aspernatur. Deleniti.
+      </Paragraph>
     </>
   );
 }
