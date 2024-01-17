@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button, Htag, Paragraph } from "./components";
+import { Button, Htag, Paragraph, Tag } from "./components";
 import Logo from "../public/vercel.svg";
 
 // export const metadata: Metadata = {
@@ -47,6 +47,12 @@ export default function Home() {
         similique hic adipisci ipsum, ratione vel minus nulla provident id quo
         molestias vero? Suscipit sit inventore doloribus aspernatur. Deleniti.
       </Paragraph>
+      <Tag >Small</Tag>
+      <Tag size="medium">Medium</Tag>
+      <Tag color="red">Red</Tag>
+      <Tag color="green">Green</Tag>
+      <Tag color="primary">Primary</Tag>
+      <Tag href="#">Link</Tag>
     </>
   );
 }
