@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
+import { Footer, Header, Sidebar } from "./components";
 
 const noto_sans = Noto_Sans({
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
@@ -19,7 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={noto_sans.className}>{children}</body>
+      <body className={noto_sans.className}>
+        <Header />
+        <main>
+          <Sidebar />
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
